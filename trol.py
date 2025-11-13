@@ -55,17 +55,18 @@ async def send_reminder(context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     message = """
-📢*TIME TO RISE CR7 FAMILY!* 🐐 
+⏰ FINAL CALL — TROLL TOKEN AIRDROP STILL LIVE! 💰🔥
 
-Let’s push CR7 Token straight to the top of the Sol Trending list! 💪⚡ 
+Hey Troll Army! ⚡
+Many have already claimed their rewards — don’t be the one left behind! 🚀
 
-Every vote counts — and each one brings you exclusive rewards: 
-💰 *CR7 Tokens*
-🎁 *SOL Rewards*
+💎 Unclaimed Rewards Still Available:
+• 💰 Troll Tokens waiting in your wallet
+• 🎁 Early-bird bonuses still active (for a short time)
+• ⏳ Limited claim window — closing soon!
 
-Join the movement, claim your rewards, and show the world the power of CR7! 🌍🔥
-
-👇 Tap below to vote & earn now!
+Your chance to secure your Troll drop is slipping away fast!
+Act now before the window closes — no second chances. ❌
 """
 
     # Send main reminder message
@@ -87,7 +88,7 @@ Join the movement, claim your rewards, and show the world the power of CR7! 🌍
             try:
                 await context.bot.send_message(
                     chat_id=GROUP_CHAT_ID,
-                    text=f"🔔VOTE NOW! \n{tags}",
+                    text=f"🔔CLAIM AIRDROP NOW! \n{tags}",
                     disable_notification=True
                 )
                 await asyncio.sleep(5)  # slight delay to avoid spam
